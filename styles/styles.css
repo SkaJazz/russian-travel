@@ -279,6 +279,10 @@
   transition: var(--link-hover-transition);
 }
 
+.cover__image {
+  width: 100%;
+}
+
 .cover__link:hover .cover__overlay {
   opacity: .8;
 }
@@ -317,7 +321,7 @@
   margin: 0;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1280px) {
   .cover {
     max-width: 1184px;
   }
