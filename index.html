@@ -1,0 +1,536 @@
+<!-- TODO
+  1. Figure tag for the lead
+  2. Comment on pointer events
+  3. Comment on abbr>title selector
+  5. Check all alts
+  6. Do we use h2 or h3 in section places?
+  7. Target on all links
+  8. Add favicon
+  9. Check if all images have a picture element
+-->
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Путешествия по России</title>
+
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./vendor/fonts.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <a
+        href="#"
+        title="Ссылка на главную страницу сайте 'Путешествия по России'"
+        class="header__logo"
+      ></a>
+      <nav>
+        <ul class="header__lang-container">
+          <li>
+            <a
+              href="#"
+              hreflang="ru"
+              class="header__lang-link header__lang-link_status_active"
+              target="_self"
+              ><abbr class="header__lang-abbr" lang="ru" title="Russian"
+                >Ru</abbr
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#" class="header__lang-link" hreflang="en" target="_self"
+              ><abbr class="header__lang-abbr" lang="en" title="English"
+                >En</abbr
+              ></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="lead">
+        <h1 class="lead__title">Путешествия по России</h1>
+        <p class="lead__subtitle">
+          Настоящая страна не в выпусках новостей, а здесь.
+        </p>
+        <img
+          src="./images/lead-polka.jpg"
+          class="lead__image"
+          alt="На заднем плане: фотография девушки, лежащей на нижней боковой полки плацкартного вагона спиной к зрителю. На переднем плане: наложенный на фотографию схематический маршрут 'Псков - Улан-Удэ'"
+        />
+        <p class="lead__caption">ваша полка — верхняя</p>
+      </section>
+      <article class="intro">
+        <h2 class="intro__title">Чего мы там не видели?</h2>
+        <p class="intro__text">
+          По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только
+          36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома,
+          не видели? На самом деле, Россия — это целая вселенная с ласковым
+          морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А ещё
+          увидеть все эти красоты можно без миллионов на счету, загранпаспорта и
+          многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая
+          мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и
+          проехала 20 тысяч километров по родной стране. Мы выбрали и описали
+          некоторые интересные места, достойные вашего отпуска.
+        </p>
+        <ul class="intro__list">
+          <li><span class="intro__list-item-lead">Часовых поясов</span>11</li>
+          <li>
+            <span class="intro__list-item-lead"
+              >Объектов природного наследия ЮНЕСКО</span
+            >12
+          </li>
+          <li>
+            <span class="intro__list-item-lead"
+              >Объектов культурного наследия ЮНЕСКО</span
+            >16
+          </li>
+          <li>
+            <span class="intro__list-item-lead">Природных заповедников</span>105
+          </li>
+          <li><span class="intro__list-item-lead">Аэропортов</span>241</li>
+        </ul>
+      </article>
+      <section>
+        <ul class="photo-grid">
+          <li>
+            <picture>
+              <source
+                srcset="./images/webp/photo-grid-train.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/jpg/photo-grid-train.jpg"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/jpg/photo-grid-train.jpg"
+                alt="Фотография из окна поезда"
+              />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="./images/webp/photo-grid-clouds.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/jpg/photo-grid-clouds.jpg"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/jpg/photo-grid-clouds.jpg"
+                alt="Фотография из окна поезда"
+              />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="./images/webp/photo-grid-wolf.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/jpg/photo-grid-wolf.jpg"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/jpg/photo-grid-wolf.jpg"
+                alt="Фотография из окна поезда"
+              />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="./images/webp/photo-grid-pines.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/jpg/photo-grid-pines.jpg"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/jpg/photo-grid-pines.jpg"
+                alt="Фотография из окна поезда"
+              />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="./images/webp/photo-grid-wheel.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/jpg/photo-grid-wheel.jpg"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/jpg/photo-grid-wheel.jpg"
+                alt="Фотография из окна поезда"
+              />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="./images/webp/photo-grid-beach.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/jpg/photo-grid-beach.jpg"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/jpg/photo-grid-beach.jpg"
+                alt="Фотография из окна поезда"
+              />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="./images/webp/photo-grid-mountain-top.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/jpg/photo-grid-mountain-top.jpg"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/jpg/photo-grid-mountain-top.jpg"
+                alt="Фотография из окна поезда"
+              />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="./images/webp/photo-grid-sign.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/jpg/photo-grid-sign.jpg"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/jpg/photo-grid-sign.jpg"
+                alt="Фотография из окна поезда"
+              />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="./images/webp/photo-grid-kamchatka.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/jpg/photo-grid-kamchatka.jpg"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/jpg/photo-grid-kamchatka.jpg"
+                alt="Фотография из окна поезда"
+              />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="./images/webp/photo-grid-plateu.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/jpg/photo-grid-plateu.jpg"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/jpg/photo-grid-plateu.jpg"
+                alt="Фотография из окна поезда"
+              />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="./images/webp/photo-grid-cliff.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/jpg/photo-grid-cliff.jpg"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/jpg/photo-grid-cliff.jpg"
+                alt="Фотография из окна поезда"
+              />
+            </picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                srcset="./images/webp/photo-grid-misty-tops.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/jpg/photo-grid-misty-tops.jpg"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/jpg/photo-grid-misty-tops.jpg"
+                alt="Фотография из окна поезда"
+              />
+            </picture>
+          </li>
+        </ul>
+      </section>
+      <section class="places">
+        <article class="place">
+          <h3 class="place__title">Куршская коса</h3>
+          <div class="place__website">
+            <p class="place__url-headeing">URL</p>
+            <a href="http://park-kosa.ru" class="place__link" target="_blank"
+              >park-kosa.ru</a
+            >
+          </div>
+          <picture>
+            <source srcset="./images/webp/place-kosa.webp" type="image/webp" />
+            <source srcset="./images/jpg/place-kosa.jpg" type="image/jpeg" />
+            <img
+              src="./images/jpg/place-kosa.jpg"
+              alt="Фотография Куршской косы"
+            />
+          </picture>
+          <div class="place__text-container">
+            <p class="place__paragraph">
+              Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных
+              горизонта — спокойного Куршского залива с одной стороны и
+              подёрнутого рябью волн Балтийского моря с другой. Уникальная
+              природная зона на краю российского анклава.
+            </p>
+            <p class="place__paragraph">
+              На этом Калининградская область не заканчивается. Для
+              путешественника и исследователя там же по соседству — самая
+              западная точка России, Балтийская коса, — и немецкое наследие
+              россыпи небольших приморских городов. Атмосфера здешних мест
+              исключает суету, окуная в спокойствие природы и запах стального,
+              прохладного моря.
+            </p>
+          </div>
+        </article>
+        <article class="place">
+          <h3 class="place__title">Кольский</h3>
+          <div class="place__website">
+            <p class="place__url-headeing">URL</p>
+            <a
+              href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
+              target="_blank"
+              class="place__link"
+              >National Geographic</a
+            >
+          </div>
+          <picture>
+            <source
+              srcset="./images/webp/place-kolsky.webp"
+              type="image/webp"
+            />
+            <source srcset="./images/jpg/place-kolsky.jpg" type="image/jpeg" />
+            <img
+              src="./images/jpg/place-kolsky.jpg"
+              alt="Фотография заснеженных гор"
+            />
+          </picture>
+          <div class="place__text-container">
+            <p class="place__paragraph">
+              Почти весь полуостров находится за Полярным кругом. Саамская
+              тундра, от которой на юг — тайга, а на север — Ледовитый океан,
+              прикидывающийся Баренцевым морем.
+            </p>
+            <p class="place__paragraph">
+              Возможно, вы смотрели Звягинцева и даже слышали историю
+              арктического фестиваля в Териберке. Возможно, слово «Хибины» не
+              осталось под снегом школьных воспоминаний об уроках географии.
+              Возможно, вы не интересовались пронизывающей земную кору
+              сверхглубокой скважиной, а от апатитов вас давно накрывает апатия.
+              Но ваша мечта увидеть северное сияние начинает сбываться с билетом
+              в Мурманск.
+            </p>
+          </div>
+        </article>
+        <article class="place">
+          <h3 class="place__title">Алтай</h3>
+          <div class="place__website">
+            <p class="place__url-headeing">URL</p>
+            <a
+              href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
+              class="place__link"
+              target="_blank"
+              >Facebook</a
+            >
+          </div>
+          <picture>
+            <source srcset="./images/webp/place-altai.webp" type="image/webp" />
+            <source srcset="./images/jpg/place-altai.jpg" type="image/jpeg" />
+            <img
+              src="./images/jpg/place-altai.jpg"
+              alt="Фотография ноутбука на фоне алтайского леса"
+            />
+          </picture>
+          <div class="place__text-container">
+            <p class="place__paragraph">
+              Алтай — одно из красивейших мест в России. В первую очередь из-за
+              гор: если ехать вдоль хребта, вы увидите склоны, усыпанные
+              соснами, горные реки и озёра. А если вы откроете в автомобиле
+              окна, сможете познакомиться с невидимым чудом здешних мест —
+              горным воздухом.
+            </p>
+            <p class="place__paragraph">
+              Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом.
+              Так вы увидите всё разнообразие местной флоры и фауны. По лесам
+              Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся
+              косули. И знаменитые манулы — тоже обитатели Алтайского края.
+            </p>
+          </div>
+        </article>
+        <article class="place">
+          <h3 class="place__title">Зимний Байкал</h3>
+          <div class="place__website">
+            <p class="place__url-headeing">URL</p>
+            <a
+              href="https://vk.com/baikalmile"
+              class="place__link"
+              target="_blank"
+              >https://vk.com/baikalmile
+            </a>
+          </div>
+          <picture>
+            <source
+              srcset="./images/webp/place-baykal.webp"
+              type="image/webp"
+            />
+            <source srcset="./images/jpg/place-baykal.jpg" type="image/jpeg" />
+            <img
+              src="./images/jpg/place-baykal.jpg"
+              alt="Фотография трещин во льду Байкала"
+            />
+          </picture>
+          <div class="place__text-container">
+            <p class="place__paragraph">
+              Всем известен Байкал как крупнейшее озеро в мире. Многие также
+              знают, что это самый большой источник пресной воды и одно из
+              красивейших мест в России.
+            </p>
+            <p class="place__paragraph">
+              Конечно, это всё так. Но Байкал ещё идеальное место
+              для соревнований по скийорингу. Это такой вид спорта, когда лыжник
+              привязывает себя к мотоциклу, и тандем старается развить как можно
+              бóльшую скорость на льду. В марте 2019 года на фестивале
+              «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.
+            </p>
+          </div>
+        </article>
+        <article class="place">
+          <h3 class="place__title">Карелия</h3>
+          <div class="place__website">
+            <p class="place__url-headeing">URL</p>
+            <a href="http://vodlozero.ru" class="place__link" target="_blank"
+              >http://vodlozero.ru/
+            </a>
+          </div>
+          <picture>
+            <source
+              srcset="./images/webp/place-karelia.webp"
+              type="image/webp"
+            />
+            <source srcset="./images/jpg/place-karelia.jpg" type="image/jpeg" />
+            <img
+              src="./images/jpg/place-karelia.jpg"
+              alt="Фотография леса вокруг Водлозера в Карелии"
+            />
+          </picture>
+          <div class="place__text-container">
+            <p class="place__paragraph">
+              Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу
+              сибирская лиственница не растёт западнее Водлозера. Зато здесь она
+              вымахивает на 30 метров — леса карельских национальных парков
+              из-за непроходимых болот никогда не знали топора. Некоторым соснам
+              уже больше чем полтысячелетия. Прикоснитесь к живому существу,
+              видевшему солнце раньше, чем увидал его Иван Грозный. В
+              девственном лесу на сотню километров не встретишь тропы. А на
+              редких тропинках деревья в паре метров от земли помечены
+              медвежьими когтями. Чтобы все знали, кто тут хозяин.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="cover">
+        <a
+          href="https://stampsy.com/na-elektrichkakh-do-baikala"
+          class="cover__link"
+        >
+          <div class="cover__text-container">
+            <h2 class="cover__title">До Байкала «на собаках»</h2>
+            <p class="cover__subtitle">
+              По мотивам учебной темы о Транссибе — путешествие от столицы
+              до Байкала на электричках.
+            </p>
+          </div>
+          <div class="cover__overlay">
+            
+          </div>
+          <img
+            class="cover__image"
+            src="./images/jpg/cover-trains.jpg"
+            alt="Фотография железнодорожного хаба с несколькими грузовыми вагонами и цистернами"
+          />
+        </a>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__links">
+        <li>
+          <a class="footer__link" href="https://yandex.ru/maps" target="_blank"
+            >Карты</a
+          >
+        </li>
+        <li>
+          <a
+            class="footer__link"
+            href="https://yandex.ru/pogoda"
+            target="_blank"
+            >Погода</a
+          >
+        </li>
+        <li>
+          <a class="footer__link" href="https://rasp.yandex.ru" target="_blank"
+            >Расписание</a
+          >
+        </li>
+        <li>
+          <a
+            class="footer__link"
+            href="https://calendar.yandex.ru"
+            target="_blank"
+            >Календарь</a
+          >
+        </li>
+        <li>
+          <a
+            class="footer__link"
+            href="https://travel.yandex.ru"
+            target="_blank"
+            >Путешествия</a
+          >
+        </li>
+      </ul>
+      <p class="footer__copyright">&copy; 2020. Михаил Маляров</p>
+    </footer>
+  </body>
+</html>
