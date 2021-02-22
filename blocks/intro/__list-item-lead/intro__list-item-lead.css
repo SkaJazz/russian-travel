@@ -2,3 +2,5 @@
   font-weight: bold;
   padding-right: 6px;
 }
+
+/* The only place where we are using bold weight. Do we really need it? */

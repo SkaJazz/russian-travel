@@ -9,8 +9,10 @@
 
 @media all and (max-width: 767px) {
   .lead__title {
-    font-size: 40px;
+    font-size: 38px;
+    /* It's 40px in the mockup, but fz40px leads to the horizontal scroll at 320px  */
     line-height: 44px;
     margin: 0 16px;
   }
 }
+
