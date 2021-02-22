@@ -4,8 +4,8 @@
   5. Check all alts
   6. Do we use h2 or h3 in section places?
   7. Target on all links
-  8. Add favicon
   9. Check if all images have a picture element
+  10. Убрать сброс скроллбара
 -->
 
 <!DOCTYPE html>
@@ -58,7 +58,7 @@
         </p>
         <figure class="lead__figure">
           <img
-            src="./images/lead-polka.jpg"
+            src="./images/jpg/lead-polka.jpg"
             class="lead__image"
             alt="На заднем плане: фотография девушки, лежащей на нижней боковой полки плацкартного вагона спиной к зрителю. На переднем плане: наложенный на фотографию схематический маршрут 'Псков - Улан-Удэ'"
           />
@@ -109,6 +109,7 @@
                 type="image/jpeg"
               />
               <img
+                class="photo-grid__item"
                 src="./images/jpg/photo-grid-train.jpg"
                 alt="Фотография из окна поезда"
               />
@@ -125,6 +126,7 @@
                 type="image/jpeg"
               />
               <img
+                class="photo-grid__item"
                 src="./images/jpg/photo-grid-clouds.jpg"
                 alt="Фотография из окна поезда"
               />
@@ -141,6 +143,7 @@
                 type="image/jpeg"
               />
               <img
+                class="photo-grid__item"
                 src="./images/jpg/photo-grid-wolf.jpg"
                 alt="Фотография из окна поезда"
               />
@@ -157,6 +160,7 @@
                 type="image/jpeg"
               />
               <img
+                class="photo-grid__item"
                 src="./images/jpg/photo-grid-pines.jpg"
                 alt="Фотография из окна поезда"
               />
@@ -173,6 +177,7 @@
                 type="image/jpeg"
               />
               <img
+                class="photo-grid__item"
                 src="./images/jpg/photo-grid-wheel.jpg"
                 alt="Фотография из окна поезда"
               />
@@ -189,6 +194,7 @@
                 type="image/jpeg"
               />
               <img
+                class="photo-grid__item"
                 src="./images/jpg/photo-grid-beach.jpg"
                 alt="Фотография из окна поезда"
               />
@@ -205,6 +211,7 @@
                 type="image/jpeg"
               />
               <img
+                class="photo-grid__item"
                 src="./images/jpg/photo-grid-mountain-top.jpg"
                 alt="Фотография из окна поезда"
               />
@@ -221,6 +228,7 @@
                 type="image/jpeg"
               />
               <img
+                class="photo-grid__item"
                 src="./images/jpg/photo-grid-sign.jpg"
                 alt="Фотография из окна поезда"
               />
@@ -237,6 +245,7 @@
                 type="image/jpeg"
               />
               <img
+                class="photo-grid__item"
                 src="./images/jpg/photo-grid-kamchatka.jpg"
                 alt="Фотография из окна поезда"
               />
@@ -253,6 +262,7 @@
                 type="image/jpeg"
               />
               <img
+                class="photo-grid__item"
                 src="./images/jpg/photo-grid-plateu.jpg"
                 alt="Фотография из окна поезда"
               />
@@ -269,6 +279,7 @@
                 type="image/jpeg"
               />
               <img
+                class="photo-grid__item"
                 src="./images/jpg/photo-grid-cliff.jpg"
                 alt="Фотография из окна поезда"
               />
@@ -285,6 +296,7 @@
                 type="image/jpeg"
               />
               <img
+                class="photo-grid__item"
                 src="./images/jpg/photo-grid-misty-tops.jpg"
                 alt="Фотография из окна поезда"
               />
@@ -305,6 +317,7 @@
             <source srcset="./images/webp/place-kosa.webp" type="image/webp" />
             <source srcset="./images/jpg/place-kosa.jpg" type="image/jpeg" />
             <img
+              class="place__image"
               src="./images/jpg/place-kosa.jpg"
               alt="Фотография Куршской косы"
             />
@@ -317,11 +330,11 @@
               природная зона на краю российского анклава.
             </p>
             <p class="place__paragraph">
-              На этом Калининградская область не заканчивается. Для
-              путешественника и исследователя там же по соседству — самая
-              западная точка России, Балтийская коса, — и немецкое наследие
+              На этом Калининградская область не заканчивается.
+              Для путешественника и исследователя там же по соседству — самая
+              западная точка России, Балтийская коса, — и немецкое наследие
               россыпи небольших приморских городов. Атмосфера здешних мест
-              исключает суету, окуная в спокойствие природы и запах стального,
+              исключает суету, окуная в спокойствие природы и запах стального,
               прохладного моря.
             </p>
           </div>
@@ -344,6 +357,7 @@
             />
             <source srcset="./images/jpg/place-kolsky.jpg" type="image/jpeg" />
             <img
+              class="place__image"
               src="./images/jpg/place-kolsky.jpg"
               alt="Фотография заснеженных гор"
             />
@@ -380,6 +394,7 @@
             <source srcset="./images/webp/place-altai.webp" type="image/webp" />
             <source srcset="./images/jpg/place-altai.jpg" type="image/jpeg" />
             <img
+              class="place__image"
               src="./images/jpg/place-altai.jpg"
               alt="Фотография ноутбука на фоне алтайского леса"
             />
@@ -418,6 +433,7 @@
             />
             <source srcset="./images/jpg/place-baykal.jpg" type="image/jpeg" />
             <img
+              class="place__image"
               src="./images/jpg/place-baykal.jpg"
               alt="Фотография трещин во льду Байкала"
             />
@@ -429,11 +445,11 @@
               красивейших мест в России.
             </p>
             <p class="place__paragraph">
-              Конечно, это всё так. Но Байкал ещё идеальное место
-              для соревнований по скийорингу. Это такой вид спорта, когда лыжник
-              привязывает себя к мотоциклу, и тандем старается развить как можно
-              бóльшую скорость на льду. В марте 2019 года на фестивале
-              «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.
+              Конечно, это всё так. Но Байкал ещё идеальное место для
+              соревнований по скийорингу. Это такой вид спорта, когда лыжник
+              привязывает себя к мотоциклу, и тандем старается развить как можно
+              бóльшую скорость на льду. В марте 2019 года на фестивале
+              «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.
             </p>
           </div>
         </article>
@@ -452,6 +468,7 @@
             />
             <source srcset="./images/jpg/place-karelia.jpg" type="image/jpeg" />
             <img
+              class="place__image"
               src="./images/jpg/place-karelia.jpg"
               alt="Фотография леса вокруг Водлозера в Карелии"
             />
@@ -477,7 +494,7 @@
           class="cover__link"
         >
           <div class="cover__text-container">
-            <h2 class="cover__title">До Байкала «на собаках»</h2>
+            <h2 class="cover__title">До Байкала «на собаках»</h2>
             <p class="cover__subtitle">
               По мотивам учебной темы о Транссибе — путешествие от столицы
               до Байкала на электричках.
