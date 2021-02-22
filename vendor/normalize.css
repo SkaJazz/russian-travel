@@ -347,12 +347,3 @@ template {
 [hidden] {
   display: none;
 }
-
-/**
- * Fix picture's line-height
- */
-
- picture {
-   display: block;
-   line-height: 0;
- }
