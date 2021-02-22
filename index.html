@@ -4,8 +4,6 @@
   5. Check all alts
   6. Do we use h2 or h3 in section places?
   7. Target on all links
-  9. Check if all images have a picture element
-  10. Убрать сброс скроллбара
 -->
 
 <!DOCTYPE html>
@@ -23,6 +21,7 @@
   <body class="page">
     <header class="header">
       <a
+        target="_self"
         href="#"
         title="Ссылка на главную страницу сайте 'Путешествия по России'"
         class="header__logo"
@@ -309,7 +308,11 @@
           <h3 class="place__title">Куршская коса</h3>
           <div class="place__website">
             <p class="place__url-headeing">URL</p>
-            <a href="http://park-kosa.ru" class="place__link" target="_blank"
+            <a
+              href="http://park-kosa.ru"
+              class="place__link"
+              target="_blank"
+              rel="nofollow noopener"
               >park-kosa.ru</a
             >
           </div>
@@ -346,6 +349,7 @@
             <a
               href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
               target="_blank"
+              rel="nofollow noopener"
               class="place__link"
               >National Geographic</a
             >
@@ -387,6 +391,7 @@
               href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
               class="place__link"
               target="_blank"
+              rel="nofollow noopener"
               >Facebook</a
             >
           </div>
@@ -423,6 +428,7 @@
               href="https://vk.com/baikalmile"
               class="place__link"
               target="_blank"
+              rel="nofollow noopener"
               >https://vk.com/baikalmile
             </a>
           </div>
@@ -457,7 +463,11 @@
           <h3 class="place__title">Карелия</h3>
           <div class="place__website">
             <p class="place__url-headeing">URL</p>
-            <a href="http://vodlozero.ru" class="place__link" target="_blank"
+            <a
+              href="http://vodlozero.ru"
+              class="place__link"
+              target="_blank"
+              rel="nofollow noopener"
               >http://vodlozero.ru/
             </a>
           </div>
@@ -492,6 +502,8 @@
         <a
           href="https://stampsy.com/na-elektrichkakh-do-baikala"
           class="cover__link"
+          target="_blank"
+              rel="nofollow noopener"
         >
           <div class="cover__text-container">
             <h2 class="cover__title">До Байкала «на собаках»</h2>
@@ -512,7 +524,7 @@
     <footer class="footer">
       <ul class="footer__links">
         <li>
-          <a class="footer__link" href="https://yandex.ru/maps" target="_blank"
+          <a class="footer__link" href="https://yandex.ru/maps" target="_blank" rel="nofollow noopener"
             >Карты</a
           >
         </li>
@@ -521,11 +533,12 @@
             class="footer__link"
             href="https://yandex.ru/pogoda"
             target="_blank"
+              rel="nofollow noopener"
             >Погода</a
           >
         </li>
         <li>
-          <a class="footer__link" href="https://rasp.yandex.ru" target="_blank"
+          <a class="footer__link" href="https://rasp.yandex.ru" target="_blank" rel="nofollow noopener"
             >Расписание</a
           >
         </li>
@@ -534,6 +547,7 @@
             class="footer__link"
             href="https://calendar.yandex.ru"
             target="_blank"
+            rel="nofollow noopener"
             >Календарь</a
           >
         </li>
@@ -542,6 +556,7 @@
             class="footer__link"
             href="https://travel.yandex.ru"
             target="_blank"
+            rel="nofollow noopener"
             >Путешествия</a
           >
         </li>
