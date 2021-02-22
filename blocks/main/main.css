@@ -1,0 +1,19 @@
+/* MAIN */
+
+.main {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 92px;
+}
+
+@media all and (max-width: 1023px) {
+  .main {
+    gap: 88px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .main {
+    gap: 64px;
+  }
+}

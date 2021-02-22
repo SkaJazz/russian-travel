@@ -1,0 +1,13 @@
+/* LEAD */
+
+.lead {
+  margin: 0 auto;
+  max-width: 984px;
+}
+
+@media all and (max-width: 1023px) {
+  .lead {
+    max-width: none;
+    width: 100%;
+  }
+}

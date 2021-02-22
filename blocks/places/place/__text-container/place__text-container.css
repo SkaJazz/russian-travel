@@ -1,0 +1,6 @@
+@media all and (max-width: 767px) {
+  .place__text-container {
+    margin: 0 16px;
+    max-width: 520px;
+  }
+}

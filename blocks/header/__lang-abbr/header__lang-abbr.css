@@ -1,0 +1,5 @@
+.header__lang-abbr[title] {
+  text-decoration: none;
+}
+
+/* The only way to fix abbr underline */

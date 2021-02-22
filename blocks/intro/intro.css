@@ -1,0 +1,25 @@
+/* INTRO */
+
+.intro {
+  width: 984px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 1279px) {
+  .intro {
+    width: 928px;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .intro {
+    width: 720px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .intro {
+    margin: 0 16px;
+    width: auto;
+  }
+}

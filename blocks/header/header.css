@@ -1,0 +1,31 @@
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: var(--main-width-max);
+  margin: 28px auto 56px;
+  padding: 0 48px;
+}
+
+@media all and (max-width: 1279px) {
+  .header {
+    margin-bottom: 48px;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .header {
+    padding: 0 24px;
+    margin-bottom: 48px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .header {
+    margin: 16px auto 48px;
+    padding: 0 16px;
+    align-items: center;
+  }
+}

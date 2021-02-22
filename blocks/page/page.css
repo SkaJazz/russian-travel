@@ -1,0 +1,9 @@
+/* PAGE STYLES */
+
+.page {
+    background-color: var(--background-color-main);
+    color: var(--color-main);
+    font-family: "Inter", "Arial", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
