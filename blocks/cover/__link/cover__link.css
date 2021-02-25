@@ -22,5 +22,5 @@
 }
 
 .cover__link:hover::after {
-    opacity: var(--link-hover-opacity);
+  opacity: var(--link-hover-opacity);
 }

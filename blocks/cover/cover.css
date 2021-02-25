@@ -8,6 +8,6 @@
 @media all and (max-width: 1279px) {
   .cover {
     max-width: none;
-    min-height: calc(100vw * 0.625)
+    min-height: calc(100vw * 0.625);
   }
 }
