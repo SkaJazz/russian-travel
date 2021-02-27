@@ -26,6 +26,12 @@
 
 @media all and (max-width: 767px) {
   .cover__link {
+    min-height: 320px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .cover__link {
     min-height: 200px;
   }
 }
